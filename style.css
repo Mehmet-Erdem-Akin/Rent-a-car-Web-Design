@@ -1,0 +1,366 @@
+
+/* HEADER START */
+header {
+    background-color: rgb(236, 235, 235);
+}
+/* NAVBAR START */
+.navbar-brand {
+    font-weight: 500;
+}
+.nav-item > a:hover{
+    display:inline-block;
+    border-bottom: 3px solid orangered;
+    padding-bottom:2px;    
+}
+
+#button-1:hover {
+    color: blue;
+    display:inline-block;
+    border-bottom: 3px solid orangered;
+    padding-bottom:2px;   
+}
+#button-2 {
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+}
+#button-2:hover {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
+#jumbotron-btn {
+    background-color: orangered !important;
+    color: white;
+    font-weight: bold;
+}
+#jumbotron-btn:hover {
+    border: 2px solid white;
+}
+
+
+/* NAVBAR FİNİSH */
+
+/* HEADER FİNİSH */
+
+/* İNTRO START  */
+
+#intro {
+    background-image: url('img/parallax-bg4.jpg');
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    /* width: 100%;
+    height: 90.8vh; */
+}
+
+.jumbotron-intro {
+    display:inline-block;
+    margin-top: 30%;
+    background-color: whitesmoke !important;
+    border-radius: 15px;
+    transition: 1s;
+    transition-property: all; 
+    text-align: center;
+}
+.jumbotron-intro:hover {
+    transition-property: all;
+    color: white;
+    transition: 1s;
+    background-color:orangered!important;
+}
+
+.intro-car {
+    margin-top: 30%;
+}
+
+/* İNTRO FİNİSH */
+
+/* MAİN START */
+
+
+.section2 {
+    background-color:orangered;
+    color: white;
+}
+#how-it-works {
+    text-align: center;
+}
+#how-it-works-2{
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.cwbadge1 {
+    width: 80px;
+    height: 70px;
+    background-color: #F2F2F2;
+    border: 2px solid white;
+    font-size: 40px;
+}
+.cwbadge1 > i {
+    color: rgb(255, 117, 4);
+}
+.cwbadge2 {
+    width: 80px;
+    height: 70px;
+    background-color: #F2F2F2;
+    border: 2px solid white;
+    font-size: 40px;
+}
+.cwbadge2 > i {
+    color: rgb(255, 117, 4);
+}
+.cwbadge3 {
+    width: 80px;
+    height: 70px;
+    background-color: #F2F2F2;
+    border: 2px solid white;
+    font-size: 40px;
+}
+.cwbadge3 > i {
+    color:  rgb(255, 117, 4);
+}
+.cwbadgetext > h6 {
+    color: #BCBCBD;
+}
+h5 {
+    text-align: center !important;
+}
+p {
+    text-align: center;
+}
+
+.badge {
+    margin-top: 30px;
+}
+.car-badge {
+    width: 150px;
+    font-size: 20px;
+}
+.car-logo {
+    width: 60px;
+}
+.marka {
+    background-color: orangered !important;
+    color: white;
+}
+.markalar > span {
+    background-color:  whitesmoke ;
+    border:  4px solid white;
+    border-radius: 10px;
+    color: black;
+}
+
+.car-brand {
+    margin-left: 200px;
+    margin-right: auto;
+}
+.car-brand > span {
+    width: 150px;
+    background-color: #F2F2F2;
+    margin-left: 15px;
+    margin-top: 15px;
+    color: #696969;
+    float: left;
+}
+.car-brand > span:hover {
+    background-color: orangered;
+    color: white;
+}
+.car-card-bg > img {
+    background-color: #e4e4e4;
+    border-radius: 15px;
+}
+.card {
+    border-radius: 15px;
+}
+.car-card-bg {
+    padding: 10px;
+    border-radius: 10px;
+}
+.card-body > span {
+    color: #a1a1a1;
+}
+.year {
+    border: 2px solid #a1a1a1;
+}
+.card-price {
+    color: orange;
+}
+.card-price2 {
+    color: #a1a1a1;
+}
+.line{
+	border-top: 1px solid #8c8b8b;
+}
+.card-icons {
+    font-size: 15px;
+    margin-left: 18px;
+}
+#car-card-btn {
+    margin-top: 20px;
+    background-color: orangered;
+    color: white;
+    width: 100%;
+    border-radius: 8px;
+    transition: 1s;
+}
+#car-card-btn:hover{
+    background-color: green;
+    transition: 1s;
+}
+.card {
+    float: left;
+    width: 17rem;
+    margin-left: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+.fa-heart {
+    left: 100px;
+    float: right;
+    margin-right: 30px;
+    margin-bottom: 0px;
+    z-index: 11;
+    color: #8c8b8b; 
+}
+
+.carousel-item {
+    height: auto;
+    margin-bottom: 250px;
+}
+
+
+.cebadge1 {
+    width: 80px;
+    height: 70px;
+    background-color: #F2F2F2;
+    border: 2px solid white;
+    float: left;
+}
+.cebadge1 > i {
+    color: rgb(255, 117, 4);
+}
+.cebadge2 {
+    width: 80px;
+    height: 70px;
+    background-color: rgb(255, 117, 4);
+    border: 2px solid white;
+}
+.cebadge2 > i {
+    color: white;
+}
+.cebadge3 {
+    width: 80px;
+    height: 70px;
+    background-color: #F2F2F2;
+    border: 2px solid white;
+}
+.cebadge3 > i {
+    color: rgb(255, 117, 4);
+}
+.cebadgetext > h6 {
+    color: #BCBCBD;
+}
+.cebadgetext {
+    margin-left: 30px;
+    margin-right: 30px;
+    float: none;
+}
+.cardswork {
+    float: left;
+    text-align: center;
+}
+.cebadgei { 
+    color: white;
+    font-size: 36px;
+    margin-top: 15px;
+}
+.cebadges {
+    margin-left: 80px;
+}
+.cebadges > span {
+}
+.cebadge {
+    font-size: 55px;
+    border-radius: 10px;
+}
+
+.ozellikler {
+    width: 100px !important;
+    height: auto;
+    margin: 10px 10px 10px 10px;
+    padding-top: 15px;
+    background-color: orangered;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* FOOTER START */
+
+footer {
+    background-color: orangered;
+}
+.footer-elements {
+    left: -40px;
+    list-style-type: none;
+    padding-left: 90px ;
+    text-align: center;
+    margin-top: 20px;
+}
+.footer-elements >li >a {
+    list-style-type: none;
+    color: white !important;
+    text-decoration: none;
+}
+
+.footer-elements > li > a:hover {
+    color: black !important;
+}
+.footer-elements > h3 {
+    color: white;
+}
+/* FOOTER FİNİSH */
+
+
+
+
+/* MAİN FİNİSH */
+
+/* CONTACT START */
+
+#contact-form {
+    background-color: orangered;
+}
+.contact-form {
+    background-color: white;
+    border-radius: 10px;
+}
+
+#contact-button {
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+    transition: 1s;
+    border-radius: 10px;
+}
+#contact-button:hover {
+    transition: 1s;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
+
+.map-bg {
+    background-color: orangered;
+    border-radius: 10px;
+    color: white;
+}
+
+iframe {
+    border-radius: 10px;
+}
+/* CONTACT FİNİSH */

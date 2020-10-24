@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent a Car</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="hover.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header class="fixed-top">
+        <nav class="navbar container navbar-expand-lg py-4 navbar-light">
+            <a class="navbar-brand" href="#">RENT A CAR</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto mr-5 pr-5">
+                <li class="nav-item mx-2 active">
+                  <a class="nav-link" href="#">Rent <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item mx-2 active">
+                  <a class="nav-link" href="">Ride</a>
+                </li>
+                <li class="nav-item mx-2 active">
+                  <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item mx-2 active">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 ml-5 my-lg-0">
+                <button id="button-1" class="btn my-2 mx-2 my-sm-0" type="submit">Sign up</button>
+                <button id="button-2" class="btn my-2 mx-2 my-sm-0" type="submit">Sign In</button>
+              </form>
+            </div>
+          </nav>
+    </header>
+
+    <section id="intro">
+        <div class="container">
+            <div class="row container justify-content-center">
+                <div class="my-5 pl-xl-5 pl-lg-5 pl-md-5 pl-sm-5 pl-5 mb-xl-5 col-xl-6 col-lg-12 col-md-8 col-sm-12 col-12">
+                    <div class="jumbotron-intro hvr-shrink mb-xl-5 px-xl-5 py-5 container">
+                        <h1 class="display-4" style="font-weight: 500;">Hello World</h1>
+                        <p class="lead" style="font-weight: 400;">This is a simple hero unit,a component for calling extra attention to featured content or information.</p>
+                        <hr class="my-4">
+                        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                        <div class="row">
+                            <button id="jumbotron-btn" class="btn ml-3 my-2 mx-2 my-sm-0" type="submit">Sign In</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro-car d-none d-sm-inline d-md-inline d-lg-inline col-xl-6 col-lg-12 col-md-8 col-sm-12 col-12 ">
+                    <img class="img-fluid hvr-forward" src="img/car3.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+    <main>
+
+        <section class="container my-4">
+            <div class="row container logos">
+                <div class=" hvr-grow-shadow col-lg-3 col-md-3 col-sm-6 col-6 logo">
+                    <img src="img/logo.jpg" alt="" class="img-fluid">
+                </div>
+                <div class=" hvr-grow-shadow col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 logo">
+                    <img src="img/logo.jpg" alt="" class="img-fluid">
+                </div>
+                <div class=" hvr-grow-shadow col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 logo">
+                    <img src="img/logo.jpg" alt="" class="img-fluid">
+                </div>
+                <div class=" hvr-grow-shadow col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 logo">
+                    <img src="img/logo.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+        </section>
+        <section class="section2 my-5 py-3">
+            <div class="container">
+                <div class="row pt-5 justify-content-center">
+                    <p class="" id="how-it-works" >HOW IT WORKS</p>
+                </div>
+                <div class="row justify-content-center">
+                    <P id="how-it-works-2">Rent Go Following 3 Working Steps</P>
+                </div>
+                <div class="row my-5">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 logos-2">
+                        <div class="row justify-content-center">
+                            <span class="badge hvr-push cwbadge cwbadge1 shadow-lg"><i class="fas cwbadgei fa-map-marker-alt"></i></span>
+                        </div>
+                        <div class="row mt-5 justify-content-center">
+                            <h3>Chose a Location</h3>
+                        </div>
+                        <div class="row justify-content-center">
+                            <p>See 3 popular hotels at heavily discounted price</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 logos-2">
+                        <div class="row justify-content-center">
+                            <span class="badge hvr-push cwbadge cwbadge2 shadow-lg"><i class="fas cwbadgei fa-calendar-check"></i></i></span>
+                        </div>
+                        <div class="row mt-5 justify-content-center">
+                            <h3>Chose a Location</h3>
+                        </div>
+                        <div class="row justify-content-center">
+                            <p>See 3 popular hotels at heavily discounted price</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 logos-2">
+                        <div class="row justify-content-center">
+                            <span class="badge hvr-push cwbadge cwbadge3 shadow-lg"><i class="fas cwbadgei fa-calendar-alt"></i></i></span>
+                        </div>
+                        <div class="row mt-5 justify-content-center">
+                            <h3>Chose a Location</h3>
+                        </div>
+                        <div class="row justify-content-center">
+                            <p>See 3 popular hotels at heavily discounted price</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pt-5 row justify-content-center container">
+            <div class="row">
+                <div class="pt-xl-5 pt-lg-5 pt-md-5 mt-xl-5 mt-lg-5 mt-md-5 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 section-range-rover">
+                    <img src="img/car4.png" alt="" class="img-fluid">
+                </div>
+                 <div class="l-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 section-range-rover">
+                     <div class="row justify-content-center">
+                        <p>BEST SERVİCES</p>
+                    </div>
+                    <div class="row">
+                        
+                    </div>
+                    <div class="row justify-content-center">
+                        <h3 style="text-align: center;" class="mx-5">Feel the best experience with our rental deals</h3>
+                    </div>
+                    <div class="col mt-3">
+                        <div class="row justify-content-center">
+                            <span class="badge hvr-push cwbadge1 shadow-lg"><i class="fas cwbadgei fa-ticket-alt"></i></span>
+                        </div>
+                        <div class="row mt-4 justify-content-center">
+                            <p>BEST SERVİCES</p>
+                        </div>
+                        <div class="row justify-content-center">
+                            <h5>Feel the best experience with our rental deals</h5>
+                        </div>
+                    </div>
+                    <div class="col mt-3 justify-content-center">
+                        <div class="row justify-content-center">
+                            <span class="badge hvr-push cwbadge1 shadow-lg"><i class="fas cwbadgei fa-briefcase"></i></span>
+                        </div>
+                        <div class="row mt-4 justify-content-center">
+                            <p>BEST SERVİCES</p>
+                        </div>
+                        <div class="row justify-content-center">
+                            <h5>Feel the best experience with our rental deals</h5>
+                        </div>
+                    </div>
+                    <div class="col mt-3 justify-content-center">
+                        <div class="row justify-content-center">
+                            <span class="badge hvr-push cwbadge1 shadow-lg"><i class="fas cwbadgei fa-cogs"></i></i></span>
+                        </div>
+                        <div class="row mt-4 justify-content-center">
+                            <p>BEST SERVİCES</p>
+                        </div>
+                        <div class="row justify-content-center">
+                            <h5>Feel the best experience with our rental deals</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+ 
+        <section class="py-5 mt-5 marka bg-dark">
+            <div class="container mb-5 ">
+                <div class="row pt-5 justify-content-center">
+                    <p>BEST SERVİCES</p>
+                </div>
+                <div class="row justify-content-center">
+                    <h3 class="" style="text-align: center;">Explore Our Top Deal From Top-Rated Dealer</h5>
+                </div>
+                <div class="row mt-5 justify-content-center">
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-6 hvr-float markalar">
+                        <span class="shadow badge car-badge"><img src="img/honda.png" alt="" class="car-logo">   Honda</span>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-6 hvr-float markalar">
+                        <span class="shadow badge car-badge"><img src="img/audi.png" alt="" class="car-logo">   Audi</span>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-6 hvr-float markalar">
+                        <span class="shadow badge car-badge"><img src="img/nissan.png" alt="" class="car-logo">   Nissan</span>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-6 hvr-float markalar">
+                        <span class="shadow badge car-badge"><img src="img/mazda.png" alt="" class="car-logo ">   Mazda</span>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-6 hvr-float markalar">
+                        <span class="shadow badge car-badge"><img src="img/toyota.png" alt="" class="car-logo">   Toyota</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 mb-5">
+            <div class="container">
+                <h2 style="text-align: center; text-decoration: underline;" class="">CARS</h2>
+                <div class="row justify-content-center container">
+                    <div class="col-xl-4- col-lg-4 col-md-4 col-sm-6 col-12 deneme">
+                        <div class="card hvr-glow">
+                            <div class="car-card-bg">
+                                 <!--<div class="c"><i class="far fa-heart"></i></div>-->
+                                <img src="img/honda3.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <span class="badge year">2020</span>
+                                    <h5 class="card-title">2020 Honda Pilot</h5>
+                                        <h5 class="card-price">$38.500</h5>
+                                        <h5 class="card-price2">$322\Month</h5>
+                                        <hr class="line">
+                                    <span class="card-icons"><i class="fas fa-tachometer-alt"></i>20k</span>
+                                    <span class="card-icons"><i class="fas fa-cogs"></i>Auto</span>
+                                    <span class="card-icons"><i class="fas fa-gas-pump"></i>Diesel</span>
+                                    <a href="#" id="car-card-btn" class="btn">Rent Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4- col-lg-4 col-md-4 col-sm-6 col-12 deneme">
+                        <div class="card hvr-glow">
+                            <div class="car-card-bg">
+                                 <!--<div class="c"><i class="far fa-heart"></i></div>-->
+                                <img src="img/honda3.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <span class="badge year">2020</span>
+                                    <h5 class="card-title">2020 Honda Pilot</h5>
+                                        <h5 class="card-price">$38.500</h5>
+                                        <h5 class="card-price2">$322\Month</h5>
+                                        <hr class="line">
+                                    <span class="card-icons"><i class="fas fa-tachometer-alt"></i>20k</span>
+                                    <span class="card-icons"><i class="fas fa-cogs"></i>Auto</span>
+                                    <span class="card-icons"><i class="fas fa-gas-pump"></i>Diesel</span>
+                                    <a href="#" id="car-card-btn" class="btn">Rent Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4- col-lg-4 col-md-4 col-sm-6 col-12 deneme">
+                        <div class="card hvr-glow">
+                            <div class="car-card-bg">
+                                 <!--<div class="c"><i class="far fa-heart"></i></div>-->
+                                <img src="img/honda3.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <span class="badge year">2020</span>
+                                    <h5 class="card-title">2020 Honda Pilot</h5>
+                                        <h5 class="card-price">$38.500</h5>
+                                        <h5 class="card-price2">$322\Month</h5>
+                                        <hr class="line">
+                                    <span class="card-icons"><i class="fas fa-tachometer-alt"></i>20k</span>
+                                    <span class="card-icons"><i class="fas fa-cogs"></i>Auto</span>
+                                    <span class="card-icons"><i class="fas fa-gas-pump"></i>Diesel</span>
+                                    <a href="#" id="car-card-btn" class="btn">Rent Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4- col-lg-4 col-md-4 col-sm-6 col-12 deneme">
+                        <div class="card hvr-glow">
+                            <div class="car-card-bg">
+                                 <!--<div class="c"><i class="far fa-heart"></i></div>-->
+                                <img src="img/honda3.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <span class="badge year">2020</span>
+                                    <h5 class="card-title">2020 Honda Pilot</h5>
+                                        <h5 class="card-price">$38.500</h5>
+                                        <h5 class="card-price2">$322\Month</h5>
+                                        <hr class="line">
+                                    <span class="card-icons"><i class="fas fa-tachometer-alt"></i>20k</span>
+                                    <span class="card-icons"><i class="fas fa-cogs"></i>Auto</span>
+                                    <span class="card-icons"><i class="fas fa-gas-pump"></i>Diesel</span>
+                                    <a href="#" id="car-card-btn" class="btn">Rent Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4- col-lg-4 col-md-4 col-sm-6 col-12 deneme">
+                        <div class="card hvr-glow">
+                            <div class="car-card-bg">
+                                 <!--<div class="c"><i class="far fa-heart"></i></div>-->
+                                <img src="img/honda3.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <span class="badge year">2020</span>
+                                    <h5 class="card-title">2020 Honda Pilot</h5>
+                                        <h5 class="card-price">$38.500</h5>
+                                        <h5 class="card-price2">$322\Month</h5>
+                                        <hr class="line">
+                                    <span class="card-icons"><i class="fas fa-tachometer-alt"></i>20k</span>
+                                    <span class="card-icons"><i class="fas fa-cogs"></i>Auto</span>
+                                    <span class="card-icons"><i class="fas fa-gas-pump"></i>Diesel</span>
+                                    <a href="#" id="car-card-btn" class="btn">Rent Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4- col-lg-4 col-md-4 col-sm-6 col-12 deneme">
+                        <div class="card hvr-glow">
+                            <div class="car-card-bg">
+                                 <!--<div class="c"><i class="far fa-heart"></i></div>-->
+                                <img src="img/honda3.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <span class="badge year">2020</span>
+                                    <h5 class="card-title">2020 Honda Pilot</h5>
+                                        <h5 class="card-price">$38.500</h5>
+                                        <h5 class="card-price2">$322\Month</h5>
+                                        <hr class="line">
+                                    <span class="card-icons"><i class="fas fa-tachometer-alt"></i>20k</span>
+                                    <span class="card-icons"><i class="fas fa-cogs"></i>Auto</span>
+                                    <span class="card-icons"><i class="fas fa-gas-pump"></i>Diesel</span>
+                                    <a href="#" id="car-card-btn" class="btn">Rent Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>           
+        </section>
+        <section>
+            <div class="container">
+                <div class="row container justify-content-center">
+                    <div class="CustomerExperience container">
+                        <h3 class="px-5" style="text-align: center;">We Are Ensuring The Best Custome Experience</h3>
+                        <h6 class="" style="text-align: center; color: gray;">You cannot put a price on your family's safety and security on the road. Find a lower price?</h6>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+
+                    <div class="row col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 cebadge">
+                       <div class="col-3 mt-5 hvr-push e">
+                        <span class="badge  cebadge1 shadow-lg"><i class="fas cwbadgei fa-tags"></i></span>
+                       </div>
+                       <div class="col-9 f">
+                        <span class="cebadgetext">
+                            <h4>Choose a location</h3>
+                            <h6>See 3 popular hotels at a heavily <br> discounted price</h6>
+                        </span>
+                       </div>
+                    </div>
+                    <div class="row col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 cebadge">
+                        <div class="col-3 mt-5 hvr-push e">
+                            <span class="badge  cebadge1 shadow-lg"><i class="fas cwbadgei fa-comment-dollar"></i></span>
+                        </div>
+                        <div class="col-9 f">
+                            <span class="cebadgetext">
+                                <h4>Choose a location</h3>
+                                <h6>See 3 popular hotels at a heavily <br> discounted price</h6>
+                            </span>
+                        </div>
+                     </div>
+                     <div class="row col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 cebadge">
+                        <div class="col-3 hvr-push mt-5 e">
+                            <span class="badge  cebadge1 shadow-lg"><i class="far cwbadgei fa-credit-card"></i></i></span>
+                        </div>
+                        <div class="col-9 f">
+                            <span class="cebadgetext">
+                                <h4>Choose a location</h3>
+                                <h6>See 3 popular hotels at a heavily <br> discounted price</h6>
+                            </span>
+                        </div>
+                     </div>
+
+                </div>
+                <div class="row">
+                    <img class="container img-fluid" src="/img/car3.png" alt="">
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 ceadges"></div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 ceadges"></div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 ceadges"></div>
+                </div>
+                <div class="row justify-content-center">
+
+                    <div class="row col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 cebadge">
+                       <div class="col-3 mt-5 hvr-push e">
+                        <span class="badge  cebadge1 shadow-lg"><i class="fas cwbadgei fa-tags"></i></span>
+                       </div>
+                       <div class="col-9 f">
+                        <span class="cebadgetext">
+                            <h4>Choose a location</h3>
+                            <h6>See 3 popular hotels at a heavily <br> discounted price</h6>
+                        </span>
+                       </div>
+                    </div>
+                    <div class="row col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 cebadge">
+                        <div class="col-3 mt-5 hvr-push e">
+                            <span class="badge  cebadge1 shadow-lg"><i class="fas cwbadgei fa-comment-dollar"></i></span>
+                        </div>
+                        <div class="col-9 f">
+                            <span class="cebadgetext">
+                                <h4>Choose a location</h3>
+                                <h6>See 3 popular hotels at a heavily <br> discounted price</h6>
+                            </span>
+                        </div>
+                     </div>
+                     <div class="row col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 cebadge">
+                        <div class="col-3 mt-5 hvr-push e">
+                            <span class="badge  cebadge1 shadow-lg"><i class="far cwbadgei fa-credit-card"></i></i></span>
+                        </div>
+                        <div class="col-9 f">
+                            <span class="cebadgetext">
+                                <h4>Choose a location</h3>
+                                <h6>See 3 popular hotels at a heavily <br> discounted price</h6>
+                            </span>
+                        </div>
+                     </div>
+
+                </div>
+            </div>
+        </section>
+        
+        <section class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-6 ozellikler hvr-float-shadow">
+                    <div class="row justify-content-center">
+                        <i class="fas fa-car px-3 pt-1"></i>
+                        <p>Engine</p> 
+                        <i class="fas fa-check px-3 pt-1"></i>
+                    </div>
+                  
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-6 ozellikler hvr-float-shadow">
+                    <div class="row justify-content-center">
+                        <i class="fas fa-wifi px-2 ml-2 pt-1"></i>
+                        <p>Transmission</p> 
+                        <i class="fas fa-check px-2 pt-1"></i>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-6 ozellikler hvr-float-shadow">
+                    <div class="row justify-content-center">
+                        <i class="fas fa-plug px-3 pt-1"></i>
+                        <p>Electrical</p> 
+                        <i class="fas fa-check px-3 pt-1"></i>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-6 ozellikler hvr-float-shadow">
+                    <div class="row justify-content-center">
+                        <i class="fas fa-thermometer-empty px-3 pt-1"></i>
+                        <p>Cooling</p> 
+                        <i class="fas fa-check px-3 pt-1"></i>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-6 ozellikler hvr-float-shadow">
+                    <div class="row justify-content-center">
+                        <i class="fas fa-comment-dots px-3 pt-1"></i>
+                        <p>20+ More...</p> 
+                        <i class="fas fa-check px-3 pt-1"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container py-5">
+            <div class="row my-5">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="jumbotron-phone py-5  my-5 px-5 mx-3">
+                        <h1 class="display-4">Download the free RentalX app</h1>
+                        <hr class="my-4">
+                        <p style="text-align: start;">for faster, easier booking and excuslive deals.</p>
+                        <div class="row">
+                            <button id="jumbotron-btn" class="btn ml-3 my-2 mx-2 my-sm-0" type="submit">Sign In</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 pl-5">
+                    <img src="img/2020-07-15_20-38-57.png" alt="" class="pl-xl-5 img-fluid">
+                </div>
+            </div>
+        </section>
+
+        <section class="" id="contact-form">
+
+            <div class="container py-5">
+              <form action="" class="container hvr-glow  contact-form px-5 py-5">
+                <div class="row contact-row">
+                  <div class="contact-col col-12 py-5">
+                    <h1 style="text-align: center;" class="pb-3">Contact Us</h1>
+                    <p>We'd love to hear from you, please drop us a line if you've any query related to our products or services.</p>
+                  </div>
+                  <div class="col-12">
+                    <div class="input-group mb-3">                
+                      <input type="text" class="form-control" placeholder="Name ..." aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="input-group mb-3">               
+                      <input type="text" class="form-control" placeholder="Surname ..." aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" placeholder="E-mail ..." aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="input-group mb-5">
+                      <textarea class="form-control contact-area" placeholder="Your message ..." aria-label="With textarea"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button id="contact-button" type="button" class="btn">Send Message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            
+          </section>
+          
+        </main>
+          
+          <section class="py-5">
+            <div class="container my-5"> 
+              <div class="row map-bg ">
+      
+                <div class="col-lg-8 py-5">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47429
+                  .669606681826!2d35.094886171417656!3d42.01413017806155!2m3!1f0!2f0
+                  !3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!
+                  1s0x408f12de6b86738d%3A0xcfa12eddefc640fb!2s
+                  Sinop%2C%20Sinop%20Merkez%2FSinop!5e0!3m2!1str!2str!4v1596
+                  881851529!5m2!1str!2str" id="map-iframe" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div id="adress" class="col-lg-4 py-5">
+                  <h3>Adres:</h3>
+                  <br>
+      
+                  <p style="text-align: start;">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat possimus molestias fuga vitae repudiandae ipsum. Harum sint iure natus unde?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+    </main>
+    <footer>
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 footer-elements">
+                        <h3>Our Products</h3>
+                        <li>
+                            <a href="">Link Example</a>
+                        </li>
+                        <li>
+                            <a href="">Link Example</a>
+                        </li>
+                        <li>
+                            <a href="">Lİnk Example</a>
+                        </li>
+                        <li>
+                            <a href="">Link Example</a>
+                        </li>
+                        <li>
+                            <a href="">Link Example</a>
+                        </li>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 footer-elements">
+                        <h3>Our Products</h3>
+                        <li>
+                            <a href="">Link Example</a>
+                        </li>
+                        <li>
+                            <a href="">Link Example</a>
+                        </li>
+                        <li>
+                            <a href="">Lİnk Example</a>
+                        </li>
+                        <li>
+                            <a href="">Link Example</a>
+                        </li>
+                        <li>
+                            <a href="">Link Example</a>
+                        </li>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 footer-elements">
+                        <h3>Our Products</h3>
+                        <li>
+                            <a href="">Link Example</a>
+                        </li>
+                        <li>
+                            <a href="">Link Example</a>
+                        </li>
+                        <li>
+                            <a href="">Lİnk Example</a>
+                        </li>
+                        <li>
+                            <a href="">Link Example</a>
+                        </li>
+                        <li>
+                            <a href="">Link Example</a>
+                        </li>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 footer-elements">
+                        <h3>Our Products</h3>
+                        <li>
+                            <a href="">Link Example</a>
+                        </li>
+                        <li>
+                            <a href="">Link Example</a>
+                        </li>
+                        <li>
+                            <a href="">Lİnk Example</a>
+                        </li>
+                        <li>
+                            <a href="">Link Example</a>
+                        </li>
+                        <li>
+                            <a href="">Link Example</a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
